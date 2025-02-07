@@ -19,12 +19,12 @@ body {
   background-color: beige;
 }
 .container-xl {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
 }
 
 .container-lg {
-  max-width: 900px;
+  max-width: 1100px;
   margin: auto;
 }
 .header-nav ul {
@@ -43,4 +43,83 @@ body {
 }
 .active {
   color: black;
+}
+/*-----PRODOTTI-------*/
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+li button {
+  border: none;
+  cursor: pointer;
+  font-size: 26px;
+  margin-left: 16px;
+  background-color: transparent;
+}
+.card li {
+  list-style: none;
+}
+.row-position h3 {
+  margin: 16px 0;
+}
+.tag {
+  margin: 16px auto;
+}
+.tag li {
+  list-style: circle;
+  margin-left: 16px;
+}
+.card {
+  width: calc((100% - 3rem) / 3);
+  background-color: azure;
+  margin: 0.5rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+.row-position {
+  justify-content: space-around;
+}
+.column {
+  width: calc(100% / 2);
+}
+.column-info {
+  padding: 0 12px;
+}
+img {
+  max-width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+/*-----FORM-------*/
+h3 {
+  text-align: center;
+  margin: 30px;
+}
+form {
+  max-width: 360px;
+  margin: auto;
+  margin-bottom: 30px;
+  background-color: azure;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px;
+}
+
+label {
+  margin: 0 4px 4px 0;
+}
+
+form button {
+  padding: 4px;
+  cursor: pointer;
+}
+
+.btn {
+  text-align: center;
 }
