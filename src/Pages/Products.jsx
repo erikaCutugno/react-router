@@ -139,8 +139,9 @@ export default function Products() {
             }}
           />
         </div>
-
-        <button type="submit">Invia</button>
+        <div className="btn">
+          <button type="submit">Invia</button>
+        </div>
       </form>
     </>
   );

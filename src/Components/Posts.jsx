@@ -1,4 +1,4 @@
-export default function Posts({ post, onClick, available }) {
+export default function Posts({ post, onClick }) {
   return (
     <div className="card">
       <li>
@@ -18,13 +18,12 @@ export default function Posts({ post, onClick, available }) {
                 return <li key={index}>{tag}</li>;
               })}
             </ul>
-            <div>
-              {post.available ? (
-                <h5>(Disponibile)</h5>
-              ) : (
-                <h5>(Non Disponibile)</h5>
-              )}
-            </div>
+
+            {post.available ? (
+              <h5>(Disponibile)</h5>
+            ) : (
+              <h5>(Non Disponibile)</h5>
+            )}
           </div>
         </div>
       </li>
