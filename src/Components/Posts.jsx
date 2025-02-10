@@ -1,9 +1,14 @@
+import { Link } from "react-router-dom";
+import axios from "axios";
+
 export default function Posts({ post, onClick }) {
   return (
     <div className="card">
       <li>
         <div className="row row-position">
-          <h3>{post.title}</h3>
+          <Link to={`/prodotti/${post.id}`}>
+            <h3>{post.title}</h3>
+          </Link>
           <button onClick={onClick}>&#9746;</button>
         </div>
 
