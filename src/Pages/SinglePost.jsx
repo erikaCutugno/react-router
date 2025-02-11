@@ -5,7 +5,9 @@ import axios from "axios";
 export default function SinglePost() {
   const { id } = useParams();
   const [singlePosts, setSinglePosts] = useState([]);
+
   const navigate = useNavigate();
+
   useEffect(() => {
     axios.get(`http://localhost:3001/posts/${id}`).then((res) => {
       setSinglePosts(res.data);

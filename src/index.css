@@ -12,11 +12,11 @@
   position: sticky;
   top: 0;
   z-index: 1;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(173, 85, 8, 0.789) 0px 5px 15px;
   margin-bottom: 30px;
 }
 body {
-  background-color: beige;
+  background-color: rgb(97, 56, 15);
 }
 .container-xl {
   max-width: 1200px;
@@ -26,6 +26,9 @@ body {
 .container-lg {
   max-width: 1100px;
   margin: auto;
+  background-color: beige;
+  border-radius: 10px;
+  padding: 8px 0;
 }
 
 .container-sm {
@@ -42,13 +45,15 @@ body {
   list-style: none;
   font-size: 30px;
   color: black;
+  text-decoration-color: blue;
 }
 
-.header-nav li a {
+li a {
   text-decoration: none;
+  color: black;
 }
 .active {
-  color: black;
+  color: rgba(173, 44, 237, 0.85);
 }
 /*-----PRODOTTI-------*/
 h1 {
